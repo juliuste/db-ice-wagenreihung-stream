@@ -1,0 +1,45 @@
+{
+	"name": "db-ice-wagenreihung-stream",
+	"description": "Stream of DB ICE trains and their carriage order for a given time interval.",
+	"version": "0.0.0",
+	"keywords": [
+		"db",
+		"german",
+		"railway",
+		"train",
+		"rail",
+		"bahn",
+		"deutsche",
+		"waggon",
+		"wagon",
+		"wagenreihung",
+		"ICE"
+	],
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"homepage": "https://github.com/juliuste/db-ice-wagenreihung-stream",
+	"repository": "juliuste/db-ice-wagenreihung-stream",
+	"bugs": "https://github.com/juliuste/db-ice-wagenreihung-stream/issues",
+	"main": "./index.js",
+	"files": [
+		"index.js"
+	],
+	"dependencies": {
+		"db-train-numbers": "0.0.1",
+		"db-wagenreihung": "0.0.0",
+		"p-retry": "^2.0.0",
+		"queue": "^4.4.2",
+		"through2-map": "^3.0.0"
+	},
+	"devDependencies": {
+		"non-empty-stream": "^1.0.0",
+		"tape": "^4.9.0"
+	},
+	"scripts": {
+		"test": "node test.js",
+		"prepare": "npm test"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"license": "ISC"
+}
